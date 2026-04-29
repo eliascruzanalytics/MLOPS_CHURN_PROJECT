@@ -7,6 +7,32 @@
 Desenvolver um pipeline completo de Machine Learning com foco em MLOps para previsão de churn de clientes, simulando um cenário real de tomada de decisão com impacto financeiro.
 
 ---
+## ⚡ Quick Start
+
+```bash
+git clone https://github.com/eliascruzanalytics/MLOPS_CHURN_PROJECT
+cd MLOPS_CHURN_PROJECT
+
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+python data/generate_data.py
+python src/train.py
+mlflow ui
+uvicorn deployment.api:app --reload
+```
+---
+### 2. Resultado real
+
+```markdown
+
+| Model | Precision | Recall  | F1-score | Lucro |
+|-------|-----------|---------|----------|--------|
+| Model | 0.5385    | 0.9269  | 0.6812   | 12760  |
+```
+
+
 
 ## Problema de Negócio
 
