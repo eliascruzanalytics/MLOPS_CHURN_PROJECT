@@ -1,5 +1,6 @@
 mlflow
-scikit-learn
-pandas
 fastapi
 uvicorn
+scikit-learn
+pandas
+numpy
